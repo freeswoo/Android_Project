@@ -9,10 +9,10 @@
     tools:showIn="@layout/activity_main">
 
     <!--
-     LinearLayout에 view(comp)를 배치하면서
-     width:0으로 설정하고 weight값을 적절히 배치하면
-     원하는 배율로 조정하여 view들을 배치할수 있다
-     -->
+    LinearLayout에 view(comp)를 배치하면서
+    width:0으로 설정하고 weight값을 적절히 배치하면
+    원하는 배율로 조정하여 view들을 배치할수 있다.
+    -->
     <LinearLayout
         android:id="@+id/input_layout"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,7 +29,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/m_input_text"
-                android:hint="메모를 입력한후 저장..."
+                android:hint="메모를 입력한 후 저장..."
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 
@@ -47,7 +47,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/memo_list_view"
-        app:layout_constraintTop_toBottomOf="@+id/input_layout"
+        app:layout_constraintTop_toBottomOf="@id/input_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="0dp">
